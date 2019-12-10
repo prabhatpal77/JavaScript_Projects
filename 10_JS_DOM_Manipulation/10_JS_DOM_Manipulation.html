@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Manipulation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="#">JS DOM Manipulation</a>
+</nav>
+<div id="text-div">
+<p id="green-p">This is a Green Color Text</p>
+<button onclick="blue();">Change to blue</button>
+<button onclick="red();">Change to red</button>
+</div>
+<div id="image-div">
+    <img src="../img/image1.jpg" width="300px" height="200px" id="myImage" alt="">
+    <br>
+    <button onclick="facebook();">Facebook</button>
+    <button onclick="youtube();">Youtube</button>
+</div>
+<script>
+function blue(){
+    document.getElementById('green-p').style.color = 'blue';
+}
+function red(){
+    document.getElementById('green-p').style.color = 'red';
+}
+function facebook(){
+    document.getElementById('myImage').setAttribute('src','../img/image5.jpeg');
+}
+function youtube(){
+    document.getElementById('myImage').setAttribute('src','../img/image3.jpeg');
+}
+</script>
+<script src="10_script.js"></script>
+</body>
+</html>
